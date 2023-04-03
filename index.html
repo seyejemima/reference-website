@@ -5,7 +5,247 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Design 1 Reference Site</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
+    <header>
+        <h1>Reference Website</h1>
+        <nav>
+          <ul>
+            <li><a href="#naming-coventions">Naming Conventions</a></li>
+            <li><a href="#commit-messages">Commit messages</a></li>
+            <li><a href="#html-elements">HTML Elements</a></li>
+            <li><a href="#generic-elements">Generic Elements</a></li>
+            <li><a href="#attributes">Attribrutes</a></li>
+            <li><a href="#structuring-content">Structuring Content</a></li>
+            <li><a href="#linking-elements">Linking Elements</a></li>
+            <li><a href="#landmark-roles">Landmark Roles</a></li>
+            <li><a href="#skip-links">Skip Links</a></li>
+            <li><a href="#font-properties">Font Properties</a></li>
+            <li><a href="#text-decorations">Text Decorations</a></li>
+          </ul>
+        </nav>
+
+      </header>  
+      
+      <main>
+        <section id="naming-coventions">
+          <h2>Naming Conventions</h2>
+          
+          <h3>Rules for naming files and paths</h3>
+          <ul>
+            <li><strong>must</strong> be lowercase different opperating systems treat capital letters differently. </li>
+            
+            <img src="images/name-examples.png" alt="url do's and don'ts" width="500"/>
+            <li> no spaces because URLs cannot have spaces in them</li>
+            <li>Only letters, numbers, and dashes Because URLs use a limited set of characters & dashes are word separators while underscores are word connectors.</li>
+          </ul>
+        </section>
+        
+        <section id="commit-messages">
+          <h2>Commit messages</h2>
+          <p> Each time you push your changes back up to Github, you must include a commit message that details the changes you made.</p>
+          <p> commiting you work is writing a summary of your work</p>
+            <h3> Rules for commiting messages</h3>
+                <ul>
+                    <li> Minimum 3 words & 10 characters</li>
+                    <li> Proper spelling & grammar</li>
+                    <li> Capital starting letter, no period</li>
+                    <li> Must start with an imperative verb: Create, Fix, Add, Solve, etc.</li>
+                    <li> Pretend every commit starts with the phrase: “This commit will…”</li>
+                </ul>
+        </section>
+        
+        <section id="html-elements">
+          <h2>HTML Elements</h2>
+          
+          <h3>Headings</h3>
+            <p>The heading tags are used to mark headings according to their importance.</p>
+          <div>
+                <h1>H1 tag stands for the most important heading of the webpage. typically used once for title.</h1>
+                    <h2>H2 tag stands for the second most important heading of the page.</h2>
+                        <h3>H3 tag stands for the third most important heading of the webpage. </h3>
+                        <p> <small> can also be used for subheaders.</small></p>
+                            <h4>H4 tag stands for the fourth most important heading of the webpage.</h4>
+                            <p> <small>can also also used for subheaders ans other small text.</small></p>
+                                <h5>H5 tag stands for the fifth most important heading of the webpage.</h5>
+                                <p><small>also used for subheaders and other small text.</small></p>
+                                    <h6> H6 tag stands for the least important and smallest heading</h6>
+          </div>
+          
+          <h3>Paragraph</h3>
+            <p>This is an example of a chunk of text within a p tag.</p>
+          
+          <h3>Unordered list</h3>
+          
+          <ul>
+            <li>I am a list item</li>
+            <li>in an unordered list</li>
+            <li>where my order is not important</li>
+          </ul>
+
+        </section>
+
+        <section id="generic-elements">
+                <h2> Generic Elements</h2>
+                 <p> generic elements are meaning less. needing a generic element to target content happens often</p>
+        <div>
+           <h3>DIV </h3>
+            <p> block element used to group elements together.</p>
+            <h3>SPAN</h3>
+            <p> an inline container used to mark up a part of a text, or document. </p>
+        </div>
+    </section>
+
+   <section id="Attributes">
+    <h2>Attributes</h2>
+    <h4>HTML attributes provide additional information about HTML elements.</h4>
+    <h3> common global attribrutes</h3>
+    <h4> P class=""</h4>
+    <p>You can use a class multiple times throughout your HTML and attach it to different types of elements.</p>
+    <h4> P id=""</h4>
+    <p>Only allowed to use one unique id once in each html page.</p>
+</section>
+
+<section id="structuring-content">
+        <h2>Structuring content </h2>
+                <h4>Organizing our HTML elements content within typical regions of a web page.</h4>
+            <h3>header</h3>
+                <ul> 
+                    <li>The header is the introductory content usually at the top of the page and would include a logo or company name and main navigation. Headers are also within sections and articles to introduce the content for headings, subheadings, author, etc..  </li> 
+                </ul>
+            <h3>footer</h3>
+                <ul>
+                    <li>Many webpages end their pages with a footer at the bottom. This often include lists of links, copyright information, extra information about the company,terms and services. </li>
+                </ul>
+            <h3>main</h3>
+                <ul>
+                     <li>The main element wraps around the main content of the page. It’s only used once per page and it tells the browser that this is where the main content is. </li>
+                </ul>
+            <h3> section</h3>
+                <ul>
+                    <li>Section is used to wrap around related pieces of content. Usually each section has its own heading.</li>
+                </ul>
+            <h3> article</h3>
+                <ul>
+                    <li>The article element represents a <em>self-contained</em> composition in a web page, which is intended to be independently distributable or reusable. Examples include blog post, product card, interactive widget, etc... </li>
+                </ul>
+            <h3>nav</h3>
+                <ul>
+                    <li>The nav element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents.</li>
+                </ul>
+            <h3> aside</h3>
+            <ul>
+                <li>The aside element represents a portion of a document whose content is only indirectly related to the document's main content. This content will frequently be presented as a sidebar on a website.</li>
+            </ul>
+</section>
+
+<section id="linking-elements">
+        <h2>Linking Elements</h2>
+            <h3>Link to an absolute url / path </h3>
+                <p>Absolute URLs offer a full address for a website or other resource on the Internet.</p>
+            <h3>Link to a relative url / path</h3>
+                <p>A relative file path points to a file relative to the current page.</p>
+            <h3>Parent-child relationship</h3>
+                <p>When learning HTML, the parent-child relationships of the elements is critical to good structure & code understanding.</p>
+            <h3>Commenting in HTML</h3>
+                <p>Comments are not displayed by the browser, but they can help document your HTML source code.</p>
+</section>
+
+<section id="landmark-roles">
+        <h2> Landmark roles</h2>
+            <h3>ARIA has a set of landmark roles to help those using screen readers to jump directly to specific sections within our sites. </h3>
+            <h3> header role="banner"</h3>
+            <ul>
+                <li>This role is for defining an element as the masthead, added to the primary header.</li>
+            </ul>
+
+            <h3> nav role=“navigation”</h3>
+            <ul>
+                <li>This role is for defining an element as the primary navigation, added the the top nav.</li>
+            </ul>
+
+            <h3>main role=“main” </h3>
+            <ul>
+                <li>This role is for defining an element as being the main content of the page, added to the main.</li>
+            </ul>
+
+            <h3> aside role=“complimentary”</h3>
+                <ul>
+                    <li>This role is for defining an element as being content related to the primary content, usually added to an aside.</li>
+                </ul>
+
+            <h3>footer role=“contentinfo”</h3>
+            <ul>
+                <li>This role is for defining an element as information about the content: e.g. copyright, terms, privacy policy, usually added to a footer.</li>
+            </ul>
+</section>
+
+<section id="skip-links">
+        <h2>Skip Links</h2>
+            <h3>Skip links are placed at the top of your page and offer users a way to jump to specific areas of the page.</h3>
+</section>
+
+<section id="font-properties">
+        <h2> Font Properties</h2>
+            <h3> Font Size</h3>
+            <ul>
+                <li> For adjusting the size of the font: a single number with a unit <i>(rem [the best choice], em, px)</i></li>
+            </ul>
+            <h3>Font Weight</h3>
+            <ul>
+                <li>Sets how thick or thin characters in text should be displayed <i>Ex: bold, normal, 700 </i></li>
+            </ul>
+            <h3>Font Style</h3>
+            <ul>
+                <li>Specifies font style for text. Ex: <i>italic</i> or normal</li>
+
+            </ul>
+
+            <h3> Line Height</h3>
+            <ul> 
+                <li>For adjusting the line-height: a single number, a multiplier that multiplies the font-size <i>Ex: 1.5</i></li>
+            </ul>
+</section>
+
+<section id="text-decorations">
+        <h2>Text Decorations</h2>
+
+            <h3> text-transform</h3>
+            <ul>
+                <li>Change capitalization such as uppercase, lowercase, capitalize. It’s a good idea to use CSS to make all caps instead of writing it directly in HTML for accessibility reasons. Ex: uppercase, lowercase, capitalize</ul></li>
+
+            <h3> text-decoration</h3>
+            <ul>
+                <li>Specifies the decoration added to text. The only things in a website that should be underlined are links. Ex: none, underline, line-through, overline </li>
+                
+            </ul>
+
+            <h3>text-align</h3>
+            <ul>
+                <li>Specifies the horizontal alignment of text in an element Ex: left, center (American spelling), right, justify</li>
+            </ul>
+
+            <h3>text-indent</h3>
+            <ul>
+                <li>Indent the first line of text like traditionally printed materials <i>Ex: 1rem, 2em, 20px, 25%</i></li>
+            </ul>
+
+            <h3>text-shadow</h3>
+            <ul>
+            <li>Adding a shadow to the text. Specified like this: text-shadow: horizontal-offset vertical-offset blur-radius colour text-shadow: <i>2px 2px #ff0000;</i></li>
+            </ul>
+</section>
+
+        <h2>Padding</h2>
+            <p>Padding adds spacing inside the box, pushing the content away from the border.</p>
+
+        <h2>Margin</h2>
+            <p>The margin is an invisible space around your box. It adds spacing outside of the box, pushing other boxes away from the box. Margins can have positive or negative values.</p>
+
+
+</main>
+            
 <body>
     
 </body>
